@@ -14,6 +14,7 @@ import { getUserWithStoredToken } from "./store/user/actions";
 
 import Spaces from './pages/Spaces' 
 import MySpace from './pages/MySpace' 
+import SpaceDetails from './pages/SpaceDetails' 
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/myspace" component={MySpace} />
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />
+        <Route path="/spaces/:id" component={SpaceDetails} />
       </Switch>
     </div>
   );
