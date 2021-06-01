@@ -28,7 +28,6 @@ export default function MySpace() {
   const displayButtons =
     id === space.userId && editMode === false && postStoryMode === false;
 
-    console.log("EDITMODE", editMode);
   return (
     <>
       <Space
