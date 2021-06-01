@@ -8,7 +8,8 @@ export default function Space(props) {
     <Jumbotron
       style={{
         backgroundColor: props.backgroundColor,
-        color: props.color
+        color: props.color,
+        margin:"1rem",
       }}
     >
       <h1>{props.title}</h1>
