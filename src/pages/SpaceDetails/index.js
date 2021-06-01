@@ -10,6 +10,7 @@ import { selectSpaceDetails } from "../../store/spaceDetails/selectors";
 export default function SpaceDetails() {
   const { id } = useParams();
   const space = useSelector(selectSpaceDetails);
+  // console.log(space);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchSpaceById(id));

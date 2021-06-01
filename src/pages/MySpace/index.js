@@ -10,6 +10,7 @@ import MySpaceForm from "./MySpaceForm";
 import StoryForm from "./StoryForm";
 import Space from "../../components/Space";
 import StoryCarousel from "../../components/StoryCarousel";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 export default function MySpace() {
   const { token, space, id } = useSelector(selectUser);
@@ -30,6 +31,9 @@ export default function MySpace() {
 
   return (
     <>
+     <Jumbotron>
+      <h1>My Spaces</h1>
+    </Jumbotron>
       <Space
         id={space.id}
         title={space.title}

@@ -1,1 +1,1 @@
-export const selectSpaceDetails = (state) => state.spaceDetails;
+export const selectSpaceDetails = (state) => state.spacedetails;
